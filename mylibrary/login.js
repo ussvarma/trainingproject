@@ -39,7 +39,7 @@ spanNode1.text("")
 
 function validate6(){
 let pass1=pass1Node.val() 
-let regexp=new RegExp("^[a-zA-Z]{2,12}$"); 
+let regexp=new RegExp("^[a-z]{2,12}$"); 
 let result=regexp.test(pass1)
 spanNode6.text("")
 
