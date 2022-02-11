@@ -39,7 +39,7 @@ spanNode1.text("")
 
 function validate6(){
 let pass1=pass1Node.val() 
-let regexp=new RegExp("^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{5,12}$"); 
+let regexp=new RegExp("^[a-zA-Z]{2,12}$"); 
 let result=regexp.test(pass1)
 spanNode6.text("")
 
@@ -49,7 +49,7 @@ if(pass1===""){
             return false
             }
 else if(result===false){
-        spanNode6.text("Your password should consists of atleast")
+        spanNode6.text("Your password must alphabets")
         pass1Node.css("border",invalidBorder)
         return false                   }
         
