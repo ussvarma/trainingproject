@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="this is very important">
+    <meta name="author" content="ussvarma">
+    <meta name="description" content="this is i">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: max-content;
+            background-image: linear-gradient(45deg,aqua,green,blue,violet 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            font-family: "Roboto";
+            
+        }
+        td>span{
+            color: red;
+            font-weight: bold;
+        }
+        #regForm{
+            
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        form{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 300px;
+            
+        }
+        #passtd{
+            color: red;
+        }
+        
+        .loginbutton{
+            border-radius: 10px;
+            margin: 10px;
+            width: 90%;
+            background-image: linear-gradient(to right,aqua,green,blue,violet);
+        }
+        input{
+            border-radius: 8px;
+            
+            
+        }
+        label{
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+  <section id="regForm">
+  
+  <form action="Page3mainpage.html"  id="rform" novalidate >
+        <table >
+            <caption ><H1>LOGIN</H1></caption>
+            <tr>
+                <td> <label for="fname">User name:</label></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td><input type="text" required id="fname" name="name" placeholder="please enter username"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr><td><span id="error1"></span></td></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>
+                    <label for="pass1"> password:</label>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td><input type="password" id="pass1"  placeholder="please enter password" ></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr><td id="passtd"><span id="error6"></td></span></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td><input type="checkbox" id="showpassword"  ><label for="showpassword">show Password</label></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+      </table>
+   
+    <div>
+    <input type="submit" value="Login" class="loginbutton" style="color: white;">
+   
+    <div>
+    </form>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="mylibrary/login.js"></script>
+</body>
+</html>
